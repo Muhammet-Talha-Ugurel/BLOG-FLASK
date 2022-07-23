@@ -1,0 +1,36 @@
+<!DOCTYPE html><!--Bu satırdaki kod html sayfası olduğunu belirtiyor-->
+<html><!--Bu satır sayfayı başlatıyor ve dil seçilyor-->
+<head><!--Bu satırda head açılıyor Görsel olmayan ayarlar burada-->
+	<title>Muhammet Talha Ugurel</title><!--Bu satır site adını giriyo-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mtu,muammet talauğurel,mtuvd">
+	<link rel="stylesheet" href="assets/css/index.css"> <!--css import-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="assets/js/index.js"></script>
+</head><!--head kapanıyor-->
+<body><!--body opened bg color inline-->
+	<?php include("app/includes/nav.php");?>
+    <div id="login-box">
+        <div class="left">
+        	<h1>Sign up</h1>
+            <form action="app/database/add_user.php" method="POST">
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Retype password" />
+            <input type="submit" name="signup_submit" value="Sign me up" />
+            <a href="login.php"><p class="login" >Login</p></a>
+            </form>
+        </div>
+        <div class="right">
+            <span class="loginwith">Sign in with<br />social network</span>
+            <button class="social-signin google">Log in with Google</button>
+        </div>
+        <div class="or">OR</div>
+        </div>
+    
+
+
+</body><!--Body kapanıyor-->
+</html><!--Html kapanıyor-->

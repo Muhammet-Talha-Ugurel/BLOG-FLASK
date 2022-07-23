@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--Bu satırdaki kod html sayfası olduğunu belirtiyor-->
+<html><!--Bu satır sayfayı başlatıyor ve dil seçilyor-->
+<head><!--Bu satırda head açılıyor Görsel olmayan ayarlar burada-->
+	<title>Muhammet Talha Ugurel</title><!--Bu satır site adını giriyo-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mtu,muammet talauğurel,mtuvd">
+	<link rel="stylesheet" href="../../../static/assets/css/admin.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="../../assets/js/index.js"></script>
+</head>
+<body>
+<!--nav start-->
+<div class="mobil_nav" >
+    <a href="#" class="logo"><img src="../../assets/images/mtu_sd_logo.jpeg" alt="Logo"></a>
+    <a class="btn"><i class="fas fa-bars" onclick="opennav()"></i></a>
+</div>
+<nav id="nav">
+<ul>
+    <img src="../../assets/images/mtu_sd_logo.jpeg" class="logo_destop" alt="Logo">
+<li><a href="../../index.php">Home</a></li>
+</ul>
+</nav>
+<!--nav end-->
+<!--main admin start-->
+<div class="admin-wraper">
+    <!--sidebar start-->
+    <div class="admin-content">
+        <div class="buton-grup">
+            <a href="add_photo.php" class="big-btn">Add picture</a>
+            <a href="index.php" class="big-btn">Manage picture</a>
+        </div>
+        <div class="content">
+            <h2 class="page-title">Manage posts</h2>
+            <form method="post"
+                  action="../../app/database/upload_picture.php"
+                  enctype="multipart/form-data">
+
+                <input class="select_file" type="file" name="file">
+
+                <input class="submit_btn" type="submit" name="submit" value="UPLOAD">
+
+            </form>
+        </div>
+    </div>
+    <!--admin content end-->
+</div>
+<!--main admin end-->
+</body>
+</html>

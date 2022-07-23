@@ -1,0 +1,639 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    height: 100%;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+@media only screen and (min-width: 750px){    
+nav
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    line-height: 10vw;
+}
+nav a
+{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: 5vw;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+nav a:hover
+{
+    color: rgb(63, 62, 62);
+}
+.menu-buton
+{
+    display: none;
+}
+/*-------------Header section-------------*/
+.header
+{
+    color: rgb(112, 16, 16);
+    font-family: 'Playfair Display', serif;
+    padding-top: 35vh;
+    font-size: 7vw;
+}
+.header_link
+{
+    color: rgb(85, 6, 6);
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Hubballi', cursive;
+}
+/*--------------section 1-------------*/
+.section1_header
+{
+    color: rgb(243, 6, 6);
+    font-size: 3vw;
+}
+.section1_content
+{
+    font-size: 6vw;
+}
+.section1_article
+{
+    margin: 100px 100px 75px 100px;
+}
+.section1_container
+{
+    display: flex;
+    margin-left: 30px;
+}
+.section1_colom p
+{
+    font-size: 3vw;
+    margin: 50px; 
+    padding-left: 35px;
+    text-align: justify;
+    border-left: 1px solid red;
+    height: 15%;
+}
+#icon1 
+{
+    float: left;
+    padding-top: 60px;
+}
+#icon2 
+{
+    float: left;
+    padding-top: 60px;
+}
+#icon3 
+{
+    float: left;
+    padding-top: 60px;
+}
+/*---------------------section 2-------------------*/
+#img2 article
+{
+    text-align: center;
+}
+
+/*-----------------------footer-----------------------*/
+#footer
+{
+    position: relative;
+    width: 100%;
+}
+.designer
+{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+}
+.designer p
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.socical-media
+{
+    position: absolute;
+    float: right;   
+    right: 100px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#socical-icon
+{
+    font-size: 30px;
+    padding-right: 20px;
+    color: black;
+}
+/*------------------------bars-------------------------*/
+#color2
+{
+    position: relative;
+}
+#color2 h1
+{
+    position: absolute;
+    font-size: 6vw;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.sikil-container
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.sikils
+{
+    width: 36%;
+    padding: 4%;
+}
+.sikils h1
+{
+    font-size: 3vw;
+}
+.sikils p
+{
+    font-size: 1.5vw;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.bars
+{
+    width: 50%;
+    float: right;
+    vertical-align: middle;
+}
+.bar
+{
+    top: 100px;
+    height: 5px;
+    background-color: rgb(199, 199, 199);
+    display: block;
+    margin: 10px 30px 50px 30px;
+    width: 100%;
+}
+.bars h2
+{
+    margin-left: 30px;
+}
+.prosess
+{
+    height: 100%;
+    background-color: rgb(83, 83, 83);
+    float: left;
+    width: 40%;
+}
+/*---------------------photgraphy-----------------------*/
+.zeen
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 40vw;
+    margin: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.zeen h1
+{
+    text-align: center;
+    font-size: 4vw;
+    color: black;
+}
+.zeen a
+{
+    text-decoration: none;
+}
+.cover-v
+{
+    height: 80%;
+}
+.cover-h
+{
+    width: 80%;
+}
+.zeen img
+{
+    width: 100%;
+    height: 100%;
+}
+/*------------------------blog------------------------*/
+#img3 article
+{
+    background-color: white;
+    width: 30%;
+    height: max-content;
+    margin: 30px;
+    padding: 3vw;
+}
+#img3 article h1
+{
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;
+}
+#img3 article p
+{
+    margin-top: 20px;
+    font-size: 1.6vw;
+    font-family: 'Cabin', sans-serif;
+}
+#img3 article a
+{
+    margin-top: 20px;
+    font-size: 1vw;
+    float: right;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+/*-----------------------sections----------------------*/
+.img
+{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.color
+{
+    height: 100%;
+}
+#img1
+{
+    background-image: url(../img/1.BMP);
+    text-align: center;
+}
+#photography
+{
+    background-image: url(../img/2.jpg);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#img3
+{
+    background-image: url(../img/3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#img4
+{
+    background-image: url(../img/4.jpg);
+}
+#color1
+{
+    text-align: center;
+}
+#go-up
+{
+    position: fixed;
+    display: none;
+    background-color: rgb(75, 73, 73);
+    height: 50px;
+    width: 50px;
+    bottom: 30px;
+    right: 30px; 
+    text-align: center;
+    border-radius: 35px;
+}
+#go-up a
+{
+    position: relative;
+    text-decoration: none;
+    top: 10px;
+    bottom: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+}
+@media only screen and (max-width: 750px)
+{
+    .menu-buton
+    {
+        position: absolute;
+        text-decoration: none;
+        color: rgb(197, 197, 197);
+        font-size: 5vw;
+        font-family: 'Bebas Neue', cursive;
+        right: 3vw;
+        top: 3vw;
+    }
+    nav 
+    {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        width: 0%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        transition: all .5s ease;
+    }
+    nav a
+    {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 5rem;
+        font-family: 'Bebas Neue', cursive;
+        margin-left: 15px;
+        margin-top: 0.3rem;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .header
+    {
+        color: rgb(112, 16, 16);
+        font-family: 'Playfair Display', serif;
+        padding-top: 40vh;
+        font-size: 7vw;
+    }
+    .header_link
+    {
+        color: rgb(85, 6, 6);
+        text-decoration: none;
+        font-size: 3vw;
+        font-family: 'Hubballi', cursive;
+    }
+    .section1_header
+    {
+        color: rgb(243, 6, 6);
+        font-size: 1.5rem;
+        margin-top: 10vw;
+    }
+    .section1_content
+    {
+        font-size: 2.2rem;
+    }
+    .section1_container
+    {
+        margin-left: 30px;
+    }
+    .section1_colom p
+    {
+        font-size: 1.4rem;
+        margin: 10vw 5vh 10vw 5vh; 
+        padding-left: 35px;
+        text-align: justify;
+        border-left: 1px solid red;
+        height: 15%;
+    }
+    #icon1 
+    {
+        float: left;
+    }
+    #icon2 
+    {
+        float: left;
+    }
+    #icon3 
+    {
+        float: left;
+    }
+    .zeen
+    {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 40vw;
+        margin: 5px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .zeen h1
+    {
+        text-align: center;
+        font-size: 4vw;
+        color: black;
+    }
+    .zeen a
+    {
+        text-decoration: none;
+    }
+    .cover-v
+    {
+        height: 80%;
+    }
+    .cover-h
+    {
+        width: 80%;
+    }
+    .zeen img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #color2
+    {
+        position: relative;
+    }
+    #color2 h1
+    {
+        font-size: 3rem;
+        font-family: 'Bebas Neue', cursive;
+        margin-left: 3vw;
+        margin-top: 3vw;
+    }
+    .sikil-container
+    {
+        height: 100%;
+    }
+    .sikils
+    {
+        width: 90%;
+        padding: 4%;
+    }
+    .sikils h1
+    {
+        font-size: 3vw;
+    }
+    .sikils p
+    {
+        font-size: 1rem;
+        margin-top: 1vw;
+        line-height: 1rem;
+    }
+    .bars
+    {
+        width: 80%;
+        vertical-align: middle;
+    }
+    .bar
+    {
+        height: 5px;
+        background-color: rgb(199, 199, 199);
+        display: block;
+        margin: 1vw 30px 5vw 30px;
+        width: 100%;
+    }
+    .bars h2
+    {
+        margin-left: 30px;
+    }
+    .prosess
+    {
+        height: 100%;
+        background-color: rgb(83, 83, 83);
+        float: left;
+        width: 40%;
+    }
+    #img3 article
+    {
+        background-color: white;
+        margin: 2vw;
+        padding: 1vw;
+    }
+    #img3 article h1
+    {
+        font-size: 1.5rem;
+        font-family: 'Bebas Neue', cursive;
+    }
+    #img3 article p
+    {
+        margin-top: 1vw;
+        font-size: 1rem;
+        font-family: 'Cabin', sans-serif;
+    }
+    #img3 article a
+    {
+        margin-top: 2vw;
+        font-size: 1rem;
+        float: right;
+        color: rgb(124, 124, 124);
+        text-decoration: none;
+    }
+
+    .logo
+    {
+        display: none;
+    }
+    #footer
+    {
+        position: relative;
+        width: 100%;
+    }
+    .designer
+    {
+        background-color: rgb(255, 255, 255);
+        height: 100px;
+        width: 100%;
+        bottom: 0px;
+    }
+    .designer p
+    {
+        font-size: 2vw;
+        position: absolute;
+        left: 30px;
+        text-align: left;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .socical-media
+    {
+        position: absolute;
+        float: right;   
+        right: 100px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #socical-icon
+    {
+        font-size: 3vw;
+        padding-right: 20px;
+        color: black;
+    }
+    .img
+    {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .color
+    {
+        height: 100%;
+    }
+    #img1
+    {
+        background-image: url(/assets/img/mobil-1.JPG);
+        text-align: center;
+    }
+    #photography
+    {
+        background-image: url(/assets/img/mobil-2.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #img3
+    {
+        background-image: url(/assets/img/mobil-3.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    #img4
+    {
+        background-image: url(/assets/img/mobil-4.jpg);
+    }
+    #color1
+    {
+        text-align: center;
+    }
+    #go-up
+    {
+        position: fixed;
+        display: none;
+        background-color: rgb(75, 73, 73);
+        height: 50px;
+        width: 50px;
+        bottom: 30px;
+        right: 30px; 
+        text-align: center;
+        border-radius: 35px;
+    }
+    #go-up a
+    {
+        position: relative;
+        text-decoration: none;
+        top: 10px;
+        bottom: 10px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+}

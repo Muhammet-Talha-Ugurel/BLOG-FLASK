@@ -1,0 +1,73 @@
+<!DOCTYPE html><!--Bu satırdaki kod html sayfası olduğunu belirtiyor-->
+<html><!--Bu satır sayfayı başlatıyor ve dil seçilyor-->
+<head><!--Bu satırda head açılıyor Görsel olmayan ayarlar burada-->
+	<title>Muhammet Talha Ugurel</title><!--Bu satır site adını giriyo-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="mtu,muammet talauğurel,mtuvd">
+	<link rel="stylesheet" href="../../../static/assets/css/admin.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="../../assets/js/index.js"></script>
+</head>
+<body>
+<!--nav start-->
+<div class="mobil_nav" >
+    <a href="#" class="logo"><img src="../../assets/images/mtu_sd_logo.jpeg" alt="Logo"></a>
+    <a class="btn"><i class="fas fa-bars" onclick="opennav()"></i></a>
+</div>
+<nav id="nav">
+<ul>
+    <img src="../../assets/images/mtu_sd_logo.jpeg" class="logo_destop" alt="Logo">
+<li><a href="index.html">Home</a></li>
+</ul>
+</nav>
+<!--nav end-->
+<!--main admin start-->
+<div class="admin-wraper">
+    <!--sidebar start-->
+    <div class="sidebar">
+        <ul>
+           <li><a href="index.php">Manage post</a></li>
+           <li><a href="../users/index.html">Manage users</a></li>
+           <li><a href="../topics/index.html">Manage topics</a></li>
+        </ul>
+    </div>
+    <!--sidebar end-->
+    <!--admin content start-->
+    <div class="admin-content">
+        <div class="buton-grup">
+            <a href="/admin/create_posts/" class="big-btn">Add posts</a>
+        </div>
+        <div class="content">
+            <h2 class="page-title">Manage posts</h2>
+            <table>
+                <thead>
+                    <th>SN</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th colspan="3">Action</th>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>First post ever</td>
+                    <td>Mtu</td>
+                    <td><a href="#" class="edit">edit</a></td>
+                    <td><a href="#" class="delete">delete</a></td>
+                    <td><a href="#" class="publis">publis</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Second post ever</td>
+                    <td>Mtu</td>
+                    <td><a href="#" class="edit">edit</a></td>
+                    <td><a href="#" class="delete">delete</a></td>
+                    <td><a href="#" class="publis">publis</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--admin content end-->
+</div>
+<!--main admin end-->
+</body>
+</html>
