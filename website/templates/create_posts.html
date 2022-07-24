@@ -13,13 +13,11 @@
 <body>
 <!--nav start-->
 <div class="mobil_nav" >
-    <a href="#" class="logo"><img src="../../assets/images/mtu_sd_logo.jpeg" alt="Logo"></a>
     <a class="btn"><i class="fas fa-bars" onclick="opennav()"></i></a>
 </div>
 <nav id="nav">
 <ul>
-    <img src="../../assets/images/mtu_sd_logo.jpeg" class="logo_destop" alt="Logo">
-<li><a href="index.php">Home</a></li>
+<li><a href="/">Home</a></li>
 </ul>
 </nav>
 <!--nav end-->
@@ -28,20 +26,19 @@
     <!--sidebar start-->
     <div class="sidebar">
         <ul>
-           <li><a href="index.php">Manage post</a></li>
-           <li><a href="../users/index.php">Manage users</a></li>
+           <li><a href="">Manage post</a></li>
+           <li><a href="">Manage users</a></li>
         </ul>
     </div>
     <!--sidebar end-->
     <!--admin content start-->
     <div class="admin-content">
         <div class="buton-grup">
-            <a href="create.php" class="big-btn">Add posts</a>
-            <a href="index.php" class="big-btn">Manage posts</a>
+            <a href="/admin" class="big-btn">Manage posts</a>
         </div>
         <div class="content">
             <h2 class="page-title">Manage posts</h2>
-            <form method="" class="" action="">
+            <form method="post">
                 <div>
                     <label>Title</label>
                     <input type="text" name="title" class="text-input" />
@@ -49,18 +46,7 @@
                     <div id="editor">
                         <p>Type here...</p>
                     </div>
-                    <script>
-                        ClassicEditor
-                        .create( document.querySelector( '#editor' ) )
-                        .catch( error => {
-                        console.error( error );
-                        } );
-                    </script>
-                    <label>Topic</label>
-                    <select name="topic" class="topic-select">
-                        <option value="Poetry">Proetry</option>
-                        <option value="Education">Education</option>
-                    </select>
+                    <textarea name="body" class="post-input"></textarea>
                     <div>
                         <buton type="submit" class="big-btn">Add post</buton>
                     </div>
