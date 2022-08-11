@@ -7,7 +7,7 @@
 	<meta name="keywords" content="mtu,muammet talauğurel,mtuvd">
 	<link rel="stylesheet" href="../../../static/assets/css/admin.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<script src="../../assets/js/index.js"></script>
+	<script src="../static/assets/js/index.js"></script>
 </head>
 <body>
 <!--nav start-->
@@ -46,22 +46,14 @@
                     <th>Author</th>
                     <th colspan="3">Action</th>
                 </thead>
+                {% for post in post%}
                 <tr>
-                    <td>1</td>
-                    <td>First post ever</td>
+                    <td>{{post.id}}</td>
+                    <td>{{post.title}}</td>
                     <td>Mtu</td>
-                    <td><a href="#" class="edit">edit</a></td>
-                    <td><a href="#" class="delete">delete</a></td>
-                    <td><a href="#" class="publis">publis</a></td>
+                    <td><button type="button" class="close" onclick="deletePost({{ post.id}})">delete</td>
                 </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Second post ever</td>
-                    <td>Mtu</td>
-                    <td><a href="#" class="edit">edit</a></td>
-                    <td><a href="#" class="delete">delete</a></td>
-                    <td><a href="#" class="publis">publis</a></td>
-                </tr>
+                {% endfor %}
             </table>
         </div>
     </div>

@@ -101,35 +101,13 @@
         </section>
    </section>
    <section id="img3" class="img">
+    {% for post in post[-3:] %}
        <article>
-           <h1>Aksam neden daha iyi calisilir</h1>
-           <p>Turkelerin bir kismi tarihte gece nobet ttukleri icin bu tarafa genetik bir gelisme oldugu soyleniyor okudugum bi kitap ise kullanilmayan beyinleri size kadigini soyluyordu hayal perest mi yoksa gercekci mi yaklasirsiniz bilmem ama sherlock'un uyusturucuyu tarif ettigi gibi bir berraklik sagliyor bana.</p>
+           <h1>{{post.title}}</h1>
+           <p>{{post.data}}</p>
             <a href="#">Devami</a>
        </article>
-       <article>
-           <h1>Zamana Karşı Öğrenim</h1>
-           <p>  Zaman geçtikçe teknolojinin
-					gelişme hızı git gide arttı. Çünkü insanların 
-					sahip oldukları imkanlar arttı artık birşeyler 
-					üretmek daha kolay hale geldi. Peki bir insanın
-					doğduktan sonra teknolojiyi bir adım ileri götürmek 
-					için o teknolojinin o spesifik dalı ile ilgil herşeyi
-					biliyor olması gerekir değil mi en azından çoğuna 
-					hakim olma......</p>
-            <a href="#">Devami</a>
-       </article>
-       <article>
-           <h1>Zamana Karşı Öğrenim</h1>
-           <p>     Zaman geçtikçe teknolojinin
-					gelişme hızı git gide arttı. Çünkü insanların 
-					sahip oldukları imkanlar arttı artık birşeyler 
-					üretmek daha kolay hale geldi. Peki bir insanın
-					doğduktan sonra teknolojiyi bir adım ileri götürmek 
-					için o teknolojinin o spesifik dalı ile ilgil herşeyi
-					biliyor olması gerekir değil mi en azından çoğuna 
-					hakim olma......</p>
-            <a href="#">Devami</a>
-       </article>
+       {% endfor %}
    </section>
    <section id="footer">
         <article class="designer">
