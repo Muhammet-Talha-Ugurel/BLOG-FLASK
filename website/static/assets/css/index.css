@@ -263,6 +263,26 @@ nav a:hover
     
 }
 
+#img3-blog article
+{
+    background-color: white;
+    width: 80%;
+    height: max-content;
+    margin: 30px;
+    padding: 3vw;
+}
+#img3-blog article h1
+{
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+#img3-blog article p
+{
+    margin-top: 20px;
+    font-size: 1.6vw;
+    font-family: 'Cabin', sans-serif;
+}
 
 
 
@@ -270,6 +290,14 @@ nav a:hover
 
 /*-----------------------sections----------------------*/
 .img
+{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.img-blog
 {
     height: 100%;
     background-repeat: no-repeat;
@@ -295,6 +323,14 @@ nav a:hover
     justify-content: center;
 }
 #img3
+{
+    background-image: url(../img/3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#img3-blog
 {
     background-image: url(../img/3.jpg);
     display: flex;
@@ -335,6 +371,14 @@ nav a:hover
 }
 @media only screen and (max-width: 750px)
 {
+#img3-blog
+{
+    background-image: url(../img/3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
     .menu-buton
     {
         position: absolute;
@@ -530,6 +574,27 @@ nav a:hover
         text-decoration: none;
     }
 
+#img3-blog article
+{
+    background-color: white;
+    width: 80%;
+    height: max-content;
+    margin: 30px;
+    padding: 3vw;
+}
+#img3-blog article h1
+{
+    font-size: 4vw;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+#img3-blog article p
+{
+    margin-top: 20px;
+    font-size: 1.6vw;
+    font-family: 'Cabin', sans-serif;
+}
+
     .logo
     {
         display: none;
@@ -585,12 +650,12 @@ nav a:hover
     }
     #img1
     {
-        background-image: url(/assets/img/mobil-1.JPG);
+        background-image: url(../img/mobil-1.JPG);
         text-align: center;
     }
     #photography
     {
-        background-image: url(/assets/img/mobil-2.jpg);
+        background-image: url(../img/mobil-2.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -599,7 +664,7 @@ nav a:hover
     }
     #img3
     {
-        background-image: url(/assets/img/mobil-3.jpg);
+        background-image: url(../img/mobil-3.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -608,7 +673,7 @@ nav a:hover
     }
     #img4
     {
-        background-image: url(/assets/img/mobil-4.jpg);
+        background-image: url(../img/mobil-4.jpg);
     }
     #color1
     {

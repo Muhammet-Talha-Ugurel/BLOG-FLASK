@@ -6,7 +6,7 @@ import json
 
 views = Blueprint('views', __name__)
 
-@views.route('/')
+@views.route('/', methods=['POST', 'GET'])
 def home():
     post = Post.query.all()
     return render_template("index.html", user=current_user, post=post)
@@ -41,3 +41,9 @@ def delete_post():
     db.session.delete(post)
     db.session.commit()
     return jsonify({})
+
+@views.route('/post/<int:post_id>')
+def post(post_id):
+    post = Post.query.filter_by(id=post_id).one()
+
+    return render_template('showblog.html', post=post)
